@@ -41,10 +41,10 @@ commit;
 -- You can use this query to add multiple lines of data at the same time.
 /*
     INSERT INTO loopteam (empId, firstname, jobtitle, age, salary)
-    VALUES ((1, 'Tom', 'SDET', 30, 125000),
-            (2, 'Jame', 'PO', 30, 120000));
+    VALUES (1, 'Tom', 'SDET', 30, 125000),
+            (2, 'Jame', 'PO', 30, 120000);
+*/
 
- */
 
 INSERT INTO loopteam (empId, firstname, jobtitle, age, salary)
 VALUES (3, 'John', 'SM', 40, 110000);
@@ -158,6 +158,8 @@ select * from agileteam;
 DROP TABLE agileteam;
 select *
 from agileteam;
+
+DROP table loopteam;
 
 
 
