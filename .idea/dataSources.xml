@@ -17,5 +17,12 @@
       <jdbc-url>jdbc:oracle:thin:@ec2-54-89-25-24.compute-1.amazonaws.com:1521:XE</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="DOCUPORT" uuid="bd3579e9-45e0-4082-8077-27cd1121682b">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://34.135.178.209:5432/postgres</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

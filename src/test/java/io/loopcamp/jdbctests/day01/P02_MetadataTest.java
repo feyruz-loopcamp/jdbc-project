@@ -1,4 +1,4 @@
-package io.loopcamp.jdbctests;
+package io.loopcamp.jdbctests.day01;
 
 import java.sql.*;
 import java.util.*;
