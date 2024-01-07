@@ -1,6 +1,5 @@
 package io.loopcamp.jdbctests.day02;
 
-import io.loopcamp.jdbctests.utility.DB_Util;
 import org.junit.Test;
 
 import java.sql.*;
@@ -19,7 +18,7 @@ public class P01_ListOfMap {
         Map< String, Object> row1Map = new HashMap<>();
         row1Map.put ("FIRST_NAME", "Steven");             	// KEY=FIRST_NAME     	VALUE=Steven
         row1Map.put ("LAST_NAME", "King");             		// KEY=FLAST_NAME     	VALUE=King
-        row1Map.put ("SALARY", 20000);             		    // KEY=SLARY     	VALUE=24,000
+        row1Map.put ("SALARY", 24000);             		    // KEY=SLARY     	    VALUE=24,000
         System.out.println(row1Map);
 
 

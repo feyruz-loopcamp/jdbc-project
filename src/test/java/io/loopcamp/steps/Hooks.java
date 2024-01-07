@@ -1,16 +1,13 @@
 package io.loopcamp.steps;
 
 import io.cucumber.java.Scenario;
-import io.loopcamp.jdbctests.utility.ConfigurationReader;
-import io.loopcamp.jdbctests.utility.DB_Util;
-import io.loopcamp.jdbctests.utility.Driver;
+import io.loopcamp.utility.ConfigurationReader;
+import io.loopcamp.utility.DB_Util;
+import io.loopcamp.utility.Driver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-
-
-import java.util.concurrent.TimeUnit;
 
 public class Hooks {
 

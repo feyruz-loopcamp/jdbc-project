@@ -4,7 +4,7 @@ Feature: As a data consumer, I want the department information stored in postgre
     Given Establish the database connection
 
   @db
-  Scenario: verify database departments table columns
+  Scenario: verify departments name in database
     When Execute query to get all columns for "departments"
     Then verify the below columns are listed in result for
 

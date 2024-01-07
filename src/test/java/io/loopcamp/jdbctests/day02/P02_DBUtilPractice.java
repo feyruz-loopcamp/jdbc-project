@@ -1,11 +1,9 @@
 package io.loopcamp.jdbctests.day02;
 
-import io.loopcamp.jdbctests.utility.DB_Util;
+import io.loopcamp.utility.DB_Util;
 import org.junit.Test;
 
 
-import java.sql.Connection;
-import java.sql.DriverManager;
 import java.util.List;
 import java.util.Map;
 

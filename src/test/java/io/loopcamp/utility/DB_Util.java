@@ -1,4 +1,4 @@
-package io.loopcamp.jdbctests.utility;
+package io.loopcamp.utility;
 
 import java.sql.*;
 import java.util.ArrayList;

@@ -21,7 +21,8 @@ public class P02_MetadataTest {
 
 
         /**
-         * Database Meta Data
+         * Database Meta Data-  will give us information about the database
+         * We use conn reference to make DatabaseMetaData reference
          */
         DatabaseMetaData dbMetaData = conn.getMetaData();
         System.out.println(dbMetaData.getUserName());
@@ -30,7 +31,8 @@ public class P02_MetadataTest {
 
 
         /**
-         * ResultSet Meta Data
+         * ResultSet Meta Data - will help us with the upper side of the table
+         * We use rs reference to make ResultSetMetaDate reference -- > by using the method .getMetaData();
          */
         //getMetaData() will return ResultSetMetaData object
         ResultSetMetaData rsmd = rs.getMetaData();

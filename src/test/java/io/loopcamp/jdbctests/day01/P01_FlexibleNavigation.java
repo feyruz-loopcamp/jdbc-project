@@ -2,10 +2,9 @@ package io.loopcamp.jdbctests.day01;
 
 import java.sql.*;
 
-public class P01_JDBCIntro {
+public class P01_FlexibleNavigation {
 
     public static void main(String[] args) throws SQLException {
-
 
         String dbURl = "jdbc:oracle:thin:@34.207.85.246:1521:XE";
         String dbUserName = "hr";
@@ -17,7 +16,7 @@ public class P01_JDBCIntro {
         // Create Statement object from Connection to execute Query
         Statement stmtn = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
 
-        // Using this stmnt object to execute the query
+        // Using this stmnt object reference to execute the query
         ResultSet rs = stmtn.executeQuery("SELECT * FROM EMPLOYEES");
 
         rs.next();

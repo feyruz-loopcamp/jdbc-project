@@ -24,8 +24,8 @@ import java.util.concurrent.TimeUnit;
         },
         features = "src/test/resources/features",
         glue = "io/loopcamp/steps",
-        dryRun = false
-        //tags = ""
+        dryRun = false,
+        tags = ""
 
 )
 

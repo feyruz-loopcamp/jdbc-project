@@ -1,4 +1,4 @@
-package io.loopcamp.jdbctests.utility;
+package io.loopcamp.utility;
 
 import java.util.Properties;
 import java.io.FileInputStream;

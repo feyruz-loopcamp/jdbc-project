@@ -20,7 +20,7 @@ where EMPLOYEE_ID = 145;
 -- FOCUS ON THIS SECTION.
 select * from employees;
 
-SELECT worker.first_name,  manager.FIRST_NAME
+SELECT worker.first_name as WORKER_FIRST_NAME,  manager.FIRST_NAME as MANAGER_FIRST_NAME
    FROM EMPLOYEES worker inner join EMPLOYEES manager
     ON worker.manager_id = manager.employee_id;
 
