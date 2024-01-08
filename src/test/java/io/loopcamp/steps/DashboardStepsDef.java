@@ -46,12 +46,12 @@ public class DashboardStepsDef {
     public void the_advisor_gets_account_holder_name() {
         dashBoardPage =new DashBoardPage();
         uiAccountHolderName = dashBoardPage.getProfileName();
-
     }
 
 
     @Then("verify ui account name is in db")
     public void verify_ui_account_name_is_in_db() {
+        //select * from document.users where first_name = '$name' and last_name = '$lastName';
         String query = "select * from document.users where first_name = '" + uiAccountHolderName.substring(0, uiAccountHolderName.indexOf(" ")) + "' and last_name = '" + uiAccountHolderName.substring(uiAccountHolderName.indexOf(" ")+1) + "'";
 
         DB_Util.runQuery(query);

@@ -1,10 +1,7 @@
 package io.loopcamp.utility;
 
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class DB_Util {
     // declaring at class level so all methods can access
@@ -377,7 +374,7 @@ public class DB_Util {
      */
     public static List<Map<String,String>> getAllRowAsListOfMap(){
 
-        List<Map<String,String>> allRowLstOfMap = new ArrayList<>();
+        List<Map<String,String>> allRowLstOfMap = new LinkedList<>();
         int rowCount = getRowCount() ;
         // move from first row till last row
         // get each row as map object and add it to the list

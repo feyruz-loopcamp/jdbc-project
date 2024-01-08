@@ -8,8 +8,7 @@ public class UsersPage extends BasePage {
 
 
 
-    @FindBy(xpath = "//div[@class='v-data-footer__pagination']")
-    public WebElement usersNumber;
+
 
     @FindBy(xpath = "//label[text()='All']")
     public WebElement allRadioButton;
@@ -22,10 +21,6 @@ public class UsersPage extends BasePage {
 
 
 
-    public int getUsersCount(){
-        String expectedUserCount = usersNumber.getText().substring(usersNumber.getText().lastIndexOf(" ")+1)+"";
 
-        return Integer.parseInt(expectedUserCount);
-    }
 
 }

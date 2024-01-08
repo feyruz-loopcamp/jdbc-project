@@ -31,6 +31,9 @@ public abstract class BasePage {
     @FindBy (xpath = "//span[@class='body-1']")
     public List<WebElement> allModules;
 
+    @FindBy(xpath = "//div[@class='v-data-footer__pagination']")
+    public WebElement totalResultCount;
+
     public void logOut(){
         accountHolderName.click();
         logOutLink.click();
@@ -43,6 +46,12 @@ public abstract class BasePage {
                 each.click();
             }
         }
+    }
+
+    public int getResultCount(){
+        String expectedUserCount = totalResultCount.getText().substring(totalResultCount.getText().lastIndexOf(" ")+1)+"";
+
+        return Integer.parseInt(expectedUserCount);
     }
 
 }

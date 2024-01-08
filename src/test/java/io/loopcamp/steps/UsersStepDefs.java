@@ -24,7 +24,7 @@ public class UsersStepDefs {
         usersPage.allRadioButton.click();
         usersPage.getSearButtonToUpdateSearch.click();
         BrowserUtil.waitFor(2);
-        expectedUserCount = usersPage.getUsersCount()+"";
+        expectedUserCount = usersPage.getResultCount()+"";
     }
 
     @Then("verify user count information match in DB")

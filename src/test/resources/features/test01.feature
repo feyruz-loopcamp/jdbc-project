@@ -1,4 +1,4 @@
-#@test01
+@test01
 Feature: As a data consumer, I want the user information are stored in postgres DB correctly in users table.
   Background:
     Given Establish the database connection
